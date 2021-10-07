@@ -11,7 +11,9 @@ print(mw.shash(write_key))
 print(mw.animal_from_key(write_key))
 
 import requests
-res = requests.put('https://devapi.microprediction.org/email/4c7b09f29b8b7eb580b48ada674142cd', params={'email': 'YOUR EMAIL HERE'})
+
+#uncomment to submit your email for prizes
+#res = requests.put('https://devapi.microprediction.org/email/4c7b09f29b8b7eb580b48ada674142cd', params={'email': 'YOUR EMAIL HERE'})
 res.json()
 
 from microprediction import MicroCrawler
